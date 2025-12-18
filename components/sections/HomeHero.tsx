@@ -7,7 +7,7 @@ const HomeHero = () => {
       <p className="gradient-text text-lg font-medium para"> <span className="border-s-2 ps-3 "></span> Aithm Image Generator</p>
 
 
-      <h1 className="text-7xl grid  font-extrabold heading">
+      <h1 className="text-[75px] grid leading-[100px] font-extrabold heading">
         Create beautiful art with <span className="gradient-text">Artificial Intelligence</span>
       </h1>
       <div className="flex justify-center bg-gray-600/20 rounded-md p-2 w-[850px]">
