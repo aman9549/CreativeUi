@@ -15,17 +15,45 @@ const HomeFeatures = () => {
         const Icon = item.icon;
 
         return(
-            <div>
-     <div  className="max-w-[290px] border-solid border-1 hover:bg-[#05051e] transition-[0.5s] border-blue-950/50  bg-[#05051e]/10 
-  backdrop-blur-md  space-y-5 px-6 py-7">
-    <span className="text-[#43a5fe] block text-end">AI Features</span>
-    <Icon className="text-6xl text-white" />
-    <h3 className="text-2xl heading mt-[40px] text-white font-semibold">{item.title}</h3>
-    <p className="text-[#b9b9ba] para text-lg  leading-8">
-      {item.description}
-    </p>
+           <div className="group">
+  <div
+    className="
+      relative max-w-[290px]
+       overflow-hidden
+      bg-[#05051e]/10 backdrop-blur-md
+      border border-blue-950/50
+      transition-all duration-500
+      hover:bg-[#05051e]
+      p-[0.5px]
+      before:content-['']
+      before:absolute
+      before:inset-[-50%]
+      before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
+      before:opacity-0
+      before:animate-none
+
+      group-hover:before:opacity-100
+      group-hover:before:animate-[spin_6s_linear_infinite]
+    "
+  >
+ 
+    <div className="relative z-10 px-6 py-7 bg-[#05051e] backdrop-blur-md  space-y-5 px-6 py-7">
+      <span className="text-[#43a5fe] block text-end">
+        AI Features
+      </span>
+
+      <Icon className="text-6xl text-white" />
+
+      <h3 className="text-2xl heading mt-[40px] text-white font-semibold">
+        {item.title}
+      </h3>
+
+      <p className="text-[#b9b9ba] para text-lg leading-8">
+        {item.description}
+      </p>
+    </div>
   </div>
-            </div>
+</div>
         )
     })
   }
@@ -37,3 +65,68 @@ const HomeFeatures = () => {
 };
 
 export default HomeFeatures;
+
+
+/*
+
+  <div className="group">
+  <div
+    className="
+      relative max-w-[290px]
+      rounded-xl overflow-hidden
+      bg-[#05051e]/10 backdrop-blur-md
+      border border-blue-950/50
+      transition-all duration-500
+      hover:bg-[#05051e]
+      p-1
+      before:content-['']
+      before:absolute
+      before:inset-[-50%]
+      before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
+      before:opacity-0
+      before:animate-none
+
+      group-hover:before:opacity-100
+      group-hover:before:animate-[spin_6s_linear_infinite]
+    "
+  >
+ 
+    <div className="relative z-10 px-6 py-7 rounded-xl bg-[red]">
+      <span className="text-[#43a5fe] block text-end">
+        AI Features
+      </span>
+
+      <Icon className="text-6xl text-white" />
+
+      <h3 className="text-2xl heading mt-[40px] text-white font-semibold">
+        {item.title}
+      </h3>
+
+      <p className="text-[#b9b9ba] para text-lg leading-8">
+        {item.description}
+      </p>
+    </div>
+  </div>
+</div>
+
+*/
+
+
+
+// ----------------
+
+
+/*
+
+<div >
+     <div  className="max-w-[290px] border-solid border-1 hover:bg-[#05051e] transition-[0.5s] border-blue-950/50  bg-[#05051e]/10 
+  backdrop-blur-md  space-y-5 px-6 py-7">
+    <span className="text-[#43a5fe] block text-end">AI Features</span>
+    <Icon className="text-6xl text-white" />
+    <h3 className="text-2xl heading mt-[40px] text-white font-semibold">{item.title}</h3>
+    <p className="text-[#b9b9ba] para text-lg  leading-8">
+      {item.description}
+    </p>
+  </div>
+            </div>
+*/

@@ -6,6 +6,8 @@
   
 }
 
+
+
 body{
   background: #05051e;
   
@@ -57,4 +59,23 @@ body{
 .para{
   font-family: var(--font-body);
 }
+
+@keyframes borderLightMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Hover-only animation */
+.star-border-hover {
+  background-size: 200% 200%;
+}
+
+.group:hover .star-border-hover {
+  animation: borderLightMove 1.5s linear infinite;
+}
+
 

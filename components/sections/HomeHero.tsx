@@ -17,7 +17,7 @@ const HomeHero = () => {
   "
 >
   <p className="gradient-text text-lg font-medium para">
-    <span className="border-s-2 ps-3"></span>
+    <span className="border-s-2 border-white ps-3"></span>
     Aithm Image Generator
   </p>
 
