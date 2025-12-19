@@ -7,7 +7,7 @@ const HomeFeatures = () => {
   return (
     <>
    <div className="grid grid-cols-1 pb-6 sm:grid-cols-2 lg:grid-cols-[290px_290px_290px_290px]
-                gap-8  pt-[100px] justify-center bg-[url('/imgi_60_background-5.png')] bg-center bg-cover bg-no-repeat justify-items-center">
+                gap-8  pt-[100px] justify-center bg-[url('/imgi_60_background-5.png')] bg-center bg-cover bg-no-repeat pb-[100px] justify-items-center">
   
   {
     featuresCard.map((item, index)=>{
@@ -15,7 +15,7 @@ const HomeFeatures = () => {
         const Icon = item.icon;
 
         return(
-           <div className="group">
+           <div className="group" key={index}>
   <div
     className="
       relative max-w-[290px]

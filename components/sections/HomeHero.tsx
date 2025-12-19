@@ -10,7 +10,8 @@ const HomeHero = () => {
     pt-24
     bg-[url('/imgi_59_background-main.png')]
     bg-center
-    bg-cover
+    
+    bg-size-[90%]
     bg-no-repeat
     justify-items-center
     gap-8
