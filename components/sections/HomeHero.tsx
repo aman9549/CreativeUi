@@ -1,33 +1,61 @@
 import Button from "../ui/Button";
-
+import {heroList} from '../../data/data';
 const HomeHero = () => {
   return (
     <>
-    <div className="grid text-center pt-[100px] bg-[url('/imgi_59_background-main.png')] justify-items-center gap-8 justify-center bg-end bg-center bg-cover bg-size-[90%] bg-no-repeat ">
-      <p className="gradient-text text-lg font-medium para"> <span className="border-s-2 ps-3 "></span> Aithm Image Generator</p>
+   <div
+  className="
+    grid
+    text-center
+    pt-24
+    bg-[url('/imgi_59_background-main.png')]
+    bg-center
+    bg-cover
+    bg-no-repeat
+    justify-items-center
+    gap-8
+  "
+>
+  <p className="gradient-text text-lg font-medium para">
+    <span className="border-s-2 ps-3"></span>
+    Aithm Image Generator
+  </p>
 
+  <h1 className="heading font-extrabold text-white leading-tight text-4xl md:text-6xl lg:text-[75px]">
+    Create beautiful art with{" "} <br />
+    <span className="gradient-text">Artificial Intelligence</span>
+  </h1>
 
-      <h1 className="text-[75px] grid leading-[100px] font-extrabold heading">
-        Create beautiful art with <span className="gradient-text">Artificial Intelligence</span>
-      </h1>
-      <div className="flex justify-center bg-gray-600/20 rounded-md p-2 w-[850px]">
-        <input className="flex-1"
-          type="text"
-          placeholder="Write your prompt and get you best ai artwork!"
-        />
-        <Button name="Generate" />
-        
-      </div>
-      <div className="flex gap-2 justify-center items-center">
-          <p className="para">Quick Try : </p>
-          <ul className="flex gap-3">
-            <li className="bg-gray-900/90 rounded-md px-5 py-2">Creative</li>
-            <li className="bg-gray-900/90 rounded-md px-5 py-2">Sport</li>
-            <li className="bg-gray-900/90 rounded-md px-5 py-2">Animation</li>
-            <li className="bg-gray-900/90 rounded-md px-5 py-2">Fantasy</li>
-          </ul>
-        </div>
-      </div>
+  <div className="flex w-full max-w-3xl items-center rounded-md bg-gray-600/20 p-2">
+    <input
+      type="text"
+      placeholder="Write your prompt and get your best AI artwork!"
+      className="
+        flex-1
+        bg-transparent
+        px-4
+        py-3
+        text-white
+        placeholder-gray-400
+        outline-none
+      "
+    />
+    <Button name="Generate" />
+  </div>
+
+  <div className="flex text-white flex-wrap items-center justify-center gap-3">
+    <p className="para">Quick Try:</p>
+    {heroList.map((item) => (
+      <button
+        key={item}
+        className="rounded-md bg-gray-900/90 px-5 py-2 text-sm hover:bg-gray-800 transition"
+      >
+        {item}
+      </button>
+    ))}
+  </div>
+</div>
+
     </>
   );
 };
